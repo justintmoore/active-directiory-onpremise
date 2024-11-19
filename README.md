@@ -155,11 +155,19 @@ Now that we are logged on to the client device. Go BACK to the VM page, and coll
 <br>
 
 <p align="center">
-Go back to your client RDP session, search the for "CMD" and open it. Use the command ping <domain controllers IP>. If you get a Reply, you have successful connected your client VM to you Domain Controller VM.
+Go back to your client RDP session, Open up Powershell. Use the command ping <domain controllers IP>. If you get a Reply, you have successful connected your client VM to you Domain Controller VM. In that same window use the command "ipconfig /all",
 </p>
 
 <p align="center">
-    <img src="https://i.imgur.com/C3ieFod.png" height="60%" width="60%" alt="placeholder"/>
+    <img src="https://i.imgur.com/2Xz3tS4.png" height="60%" width="60%" alt="placeholder"/>
 </p>
 <br>
 
+<p align="center">
+Now we must check the DNS settigns to ensure that we are connected to the Domain Controller. In that same window use the command "ipconfig /all". Towards the bottom you will see DNS Servers, ensure that it indeed matches.
+</p>
+
+<p align="center">
+    <img src="https://i.imgur.com/3lGW7mE.png" height="60%" width="60%" alt="placeholder"/>
+</p>
+<br>
