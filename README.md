@@ -51,7 +51,7 @@
 <br> 
 
 <p align="center">
-   Next comes out VM that will serve as our Domain Controller. A Domain Controller is simply a centralized Windows server that manages user authentication, security policies, and access to resources in a network. Go to create VM, and start to fill out your details. Ensure that you place your VM region in the same place as your VNet, and resource group. For Image you will choose Windows Server 2022, with 2 vcpus and 8 GiB of memory. It should resemble this.
+   Next comes out VM that will serve as our Domain Controller (DC). A Domain Controller is simply a centralized Windows server that manages user authentication, security policies, and access to resources in a network. Go to create VM, and start to fill out your details. Ensure that you place your VM region in the same place as your VNet, and resource group. For Image you will choose Windows Server 2022, with 2 vcpus and 8 GiB of memory. It should resemble this.
 </p>
 
 <p align="center">
@@ -131,6 +131,35 @@
 
 <p align="center">
     <img src="https://i.imgur.com/EMbRIBW.png" height="60%" width="60%" alt="placeholder"/>
+</p>
+<br>
+
+<p align="center">
+   Now that we have updated the clients dns settings, we must reset the VM, for changes to take affect. There is alot of back and forth so I advise that you read a step, do a step.
+</p>
+<br>
+
+<p align="center">
+So head back to the VM page, select the client box, and choose restart at the top. After it restarts, we will login into the client VM and attempt to ping the domain controller. 
+</p>
+<br>
+
+<p align="center">
+Get the public IP of the client VM. Open up RDP, paste the IP, and connect.
+</p>
+<br>
+
+<p align="center">
+Now that we are logged on to the client device. Go BACK to the VM page, and collect the private IP for the domain controller VM. If you happened to remember the IP, then more power to you!
+</p>
+<br>
+
+<p align="center">
+Go back to your client RDP session, search the for "CMD" and open it. Use the command ping <domain controllers IP>. If you get a Reply, you have successful connected your client VM to you Domain Controller VM.
+</p>
+
+<p align="center">
+    <img src="https://i.imgur.com/C3ieFod.png" height="60%" width="60%" alt="placeholder"/>
 </p>
 <br>
 
