@@ -64,7 +64,7 @@
 </p>
 <br>
 <p align="center">
-   Choose your login credentials. Make sure to take note and store them somewhere in case you forget. Click next until you get to Netowrking. Make sure your Virtual netowrk is set to the VNet you created. Leave everything else as defauly and select Review and create.
+   Choose your login credentials. Make sure to take note and store them somewhere in case you forget. Click next until you get to Networking. Make sure your Virtual network is set to the VNet you created. Leave everything else as defauly and select Review and create.
 </p>
 <br>
 <p align="center">
@@ -77,7 +77,7 @@
 <br> 
 
 <p align="center">
-   After VM is created, set Domain Controllers NIC Private IP address to be static. We are doing this because later on in this lab, we will configure our client device's dns settings to point to our domain controller. If by chance, that domain controllers IP changes, then the client loses ability to resolve domains. It also adds consistency within our setup. Navigate to your domain controller VM -> Netowrk Settings -> Find the Network Interface box, and click it.
+   After VM is created, set Domain Controllers NIC Private IP address to be static. We are doing this because later on in this lab, we will configure our client device's dns settings to point to our domain controller. If by chance, that domain controllers IP changes, then the client loses ability to resolve domains. It also adds consistency within our setup. Navigate to your domain controller VM -> Network Settings -> Find the Network Interface box, and click it.
 </p>
 
 <p align="center">
