@@ -104,10 +104,33 @@
 <br>
 
 <p align="center">
-   Now that you are in, lets go to the Windows icon on the bottom left corner, right clight, and choose run. Type in "wf.msc"
+   Now that you are in, lets go to the Windows icon on the bottom left corner, right clight, and choose run. Type in "wf.msc". 
 </p>
 
 <p align="center">
     <img src="https://i.imgur.com/u8gyoqR.png" height="60%" width="60%" alt="placeholder"/>
 </p>
 <br>
+
+<p align="center">
+   This opens up your Windows Defender Firewall. Under Overview click the link "Windows Defender Firewall Properties" -> Under Domain Profile, Private Profile, and Public Profile, turn the "firewall state" to OFF. Apply changes, and click ok.
+</p>
+
+<p align="center">
+    <img src="https://i.imgur.com/mRaoP8U.png" height="60%" width="60%" alt="placeholder"/>
+</p>
+<br>
+
+<p align="center">
+   Now we must work on our client. We have to set the clients dns settings to point to the domain controllers IP address. So, find your domain controllers private IP, and copy it. Go to the client VM -> Network Settings -> Network interface -> DNS Servers. Now change the DNS servers from "inherit from virtual network, to custom. Paste the IP address.
+</p>
+<br>
+<p align="center">
+   This will now allow our client device to query the domain controller to resolve IPs. For example, if the client searches "google.com", the client will look to the domain controller as it's DNS Server.
+</p>
+
+<p align="center">
+    <img src="https://i.imgur.com/EMbRIBW.png" height="60%" width="60%" alt="placeholder"/>
+</p>
+<br>
+
