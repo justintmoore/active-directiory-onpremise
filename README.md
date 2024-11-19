@@ -99,7 +99,15 @@
 </p>
 
 <p align="center">
-    <img src="https://i.imgur.com/UGC7Q83.png" height="60%" width="60%" alt="placeholder"/>
+    <img src="https://i.imgur.com/jwshcai.png" height="60%" width="60%" alt="placeholder"/>
 </p>
 <br>
 
+<p align="center">
+   Now that you are in, lets go to the Windows icon on the bottom left corner, right clight, and choose run. Type in "wf.msc"
+</p>
+
+<p align="center">
+    <img src="https://i.imgur.com/u8gyoqR.png" height="60%" width="60%" alt="placeholder"/>
+</p>
+<br>
