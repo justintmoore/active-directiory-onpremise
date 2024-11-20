@@ -1,7 +1,7 @@
 <p align="center">
     <img src="https://i.imgur.com/8EzPyDZ.png" alt=osTicket logo"/>  
     
-### If you come across this page before it's finished, I apologize. Documenting unfortunately takes quite a bit of time, just know that this project is done. Just putting the finishing touches on it! :)
+
     
 ## Tools, Utilities, Services Used
 - Microsoft Azure <br>
