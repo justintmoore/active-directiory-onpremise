@@ -14,7 +14,7 @@
 
 ## Program Walkthrough
 <p align="center">
-    Objective: Lay out the Active Directory architecture. We are going to set up a virtual network within Azure, and use Windows Server 2022 VM to create a AD Domain Controller. We will then set up a Windows 10 VM as a client device, and join it to the domain. Once that foundation is setup, we will create users using powershell, as well as configure, and manage Group Policy to manage accounts. We may add more to this, stick around and see!
+    Objective: Lay out the foundation for our Active Directory architecture . We are going to set up a virtual network within Azure, create a Windows 10 VM for our client, and use Windows Server 2022 VM to use as our future AD Domain Controller. Once that foundation is setup, our later labs will install and configure Active Directory, join our client VM to the domain, we will create users using powershell, as well as configure, and manage Group Policy to manage accounts. We may add more to this, stick around and see!
 </p>
 <br>
 
@@ -155,7 +155,7 @@ Now that we are logged on to the client device. Go BACK to the VM page, and coll
 <br>
 
 <p align="center">
-Go back to your client RDP session, Open up Powershell. Use the command ping <domain controllers IP>. If you get a Reply, you have successful connected your client VM to you Domain Controller VM. In that same window use the command "ipconfig /all",
+Go back to your client RDP session, Open up Powershell. Use the command ping <domainControllersIP>. If you get a Reply, you have successful connected your client VM to you Domain Controller VM.
 </p>
 
 <p align="center">
@@ -164,7 +164,7 @@ Go back to your client RDP session, Open up Powershell. Use the command ping <do
 <br>
 
 <p align="center">
-Now we must check the DNS settigns to ensure that we are connected to the Domain Controller. In that same window use the command "ipconfig /all". Towards the bottom you will see DNS Servers, ensure that it indeed matches.
+Now we must check the DNS settings to ensure that we are connected to the Domain Controller VM. In that same window use the command "ipconfig /all". Towards the bottom you will see DNS Servers, ensure that it indeed matches. That wraps up this portion of the lab, next we install and deploy Active Directory.
 </p>
 
 <p align="center">
