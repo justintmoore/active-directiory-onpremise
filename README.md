@@ -172,7 +172,7 @@ Now we must check the DNS settings to ensure that we are connected to the Domain
 </p>
 <br>
 
-## Lesson Learned
+## Lessons Learned
 <p align="center">
     This lab was a good refresher in many things. I got some good reps in, building on that working knowledge of Active Directory. We set up 2 Virtual Machines, Windows 10 serving as the client, and Windows Server 2022 that will serve as the Domain Controller. Solidified some networking concepts by placing both VMs within the same virtual network allows them to communicate via Private IPs. I learned about configuring static DNS settings on Windows Server, as this ensures the IP address remains constant, unlike when it's set dynamically. The DNS was configured as static because our Windows Server needed to function not only as a Domain Controller but also as a DNS server. In theory I understood how to statically set DNS settings, but never had the oppurtunity to outside my own home device. I got to do that when we set the Client DNS settings to the static Private IP of our Windows Server. I was then able to double check by testing connectivity using the ping command on my client device to my Windows Server.
 </p>
